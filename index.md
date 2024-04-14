@@ -146,12 +146,10 @@ address.
 {% endif %}
 {% if info.latitude and info.longitude and online == "false" %}
 <p id="where">
-  <strong>Where:</strong>
-  {{info.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{info.latitude}}&mlon={{info.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{info.latitude}},{{info.longitude}}">Google Maps</a>.
+  <strong>Where:</strong> <br>
+  Monday: Belle van Zuylenzaal, C1.13, University Library, Singel 425, Amsterdam <br>
+  Tuesday: REC V2.09, Roeterseiland Campus Building V, Valckenierstraat 61, Amsterdam <br>
+  Wednesday: Potgieterszaal, C0.01, University Library, Singel 425, Amsterdam
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
